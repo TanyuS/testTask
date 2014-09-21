@@ -1,0 +1,515 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Ubuntu;
+}
+body { width: 100%; }
+/*** ЗАГОЛОВОК ***/
+.header, 
+.footer {
+	position: relative;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	min-width: 1320px;
+	height: 149px;
+	background: url('images/header.png') repeat 0 0;
+}
+.headerWrapper {
+	position: relative;
+	top: 0;
+	left: 50%;
+	margin-left: -589px; /* выравнивание посередине */
+	width: 1178px;
+	height: 100%;
+	color: #fff;
+}
+.bigTitleHeader {
+	position: relative;
+	top: 30px;
+	left: 0;
+	float: left;
+	width: 888px;
+	height: auto;
+	text-transform: uppercase;
+	text-align: left;
+	line-height: 50px;
+	font-size: 46px;
+	font-weight: bold;
+}
+.smallTitleHeader {
+	position: relative;
+	top: 24px;
+	left: 1px;
+	float: left;
+	width: 888px;
+	line-height: 38px;
+	font-size: 34px;
+	font-weight: lighter;
+	word-spacing: 0.2ex; /*для выравнивания строчки как justify*/
+}
+.orderCallBtn,
+.cellphone {
+	position: relative;
+	right: 0;
+	float: right;
+	width: 233px;
+	height: 35px;
+	text-align: center;
+}
+.cellphone {
+	width: 240px;
+	top: -14px;
+	font-size: 30px;
+	font-weight: lighter;
+}
+.cellphone .phoneNumber { font-weight: normal; }
+.orderCallBtn {
+	top: -12px;
+	border: 2px solid #f0652f;
+	line-height: 32px;
+	font-weight: lighter;
+	font-size: 21px;
+	cursor: pointer;
+}
+.orderCallBtn:active {
+	margin-top: 1px;
+}
+.horline {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background-color: #f0652f; 
+}
+/*** общий стиль у элементов ввода ***/
+input[type="text"]{
+	padding-left: 15px;
+	width: 265px;
+	height: 43px;
+	font-size: 20px;
+	font-weight: lighter;
+	line-height: 42px;
+	resize: none;
+	outline-style: none;
+	-moz-appearance: none;
+	border: none !important;
+	border-radius: 11px;
+	color: #000;
+}
+input[type="submit"] {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 151px;
+	height: 46px;
+	text-align: center;
+	line-height: 42px;
+	font-size: 21px;
+	font-weight: lighter;
+	background-color: #f0652f;
+	border-radius: 8px;
+	outline-style: none;
+	-moz-appearance: none;
+	border: none !important;
+	color: #fff;
+	cursor: pointer;
+}
+input[type="text"].watermark { color: #a7a9ac; }
+.submitBtn:active { margin-top: 1px; }
+.btnShadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.5;
+	width: 151px;
+	height: 46px;
+	border-radius: 8px;
+	box-shadow: rgba(0, 0, 0, 0.06) 1px 1px,
+	    rgba(0, 0, 0, 0.059) 2px 2px,
+	    rgba(0, 0, 0, 0.058) 3px 3px,
+	    rgba(0, 0, 0, 0.057) 4px 4px,
+	    rgba(0, 0, 0, 0.056) 5px 5px,
+	    rgba(0, 0, 0, 0.055) 6px 6px,
+	    rgba(0, 0, 0, 0.054) 7px 7px,
+	    rgba(0, 0, 0, 0.053) 8px 8px,
+	    rgba(0, 0, 0, 0.052) 9px 9px,
+	    rgba(0, 0, 0, 0.051) 10px 10px,
+	    rgba(0, 0, 0, 0.05) 11px 11px,
+	    rgba(0, 0, 0, 0.049) 12px 12px,
+	    rgba(0, 0, 0, 0.048) 13px 13px,
+	    rgba(0, 0, 0, 0.047) 14px 14px,
+	    rgba(0, 0, 0, 0.046) 15px 15px,
+	    rgba(0, 0, 0, 0.045) 16px 16px,
+	    rgba(0, 0, 0, 0.044) 17px 17px,
+	    rgba(0, 0, 0, 0.043) 18px 18px,
+	    rgba(0, 0, 0, 0.042) 19px 19px,
+	    rgba(0, 0, 0, 0.041) 20px 20px,
+	    rgba(0, 0, 0, 0.04) 21px 21px,
+	    rgba(0, 0, 0, 0.039) 22px 22px,
+	    rgba(0, 0, 0, 0.038) 23px 23px,
+	    rgba(0, 0, 0, 0.037) 24px 24px,
+	    rgba(0, 0, 0, 0.036) 25px 25px,
+	    rgba(0, 0, 0, 0.035) 26px 26px,
+	    rgba(0, 0, 0, 0.034) 27px 27px,
+	    rgba(0, 0, 0, 0.033) 28px 28px,
+	    rgba(0, 0, 0, 0.032) 29px 29px,
+	    rgba(0, 0, 0, 0.031) 30px 30px,
+	    rgba(0, 0, 0, 0.03) 31px 31px,
+	    rgba(0, 0, 0, 0.029) 32px 32px,
+	    rgba(0, 0, 0, 0.028) 33px 33px,
+	    rgba(0, 0, 0, 0.027) 34px 34px,
+	    rgba(0, 0, 0, 0.026) 35px 35px,
+	    rgba(0, 0, 0, 0.025) 36px 36px,
+	    rgba(0, 0, 0, 0.024) 37px 37px,
+	    rgba(0, 0, 0, 0.023) 38px 38px,
+	    rgba(0, 0, 0, 0.022) 39px 39px,
+	    rgba(0, 0, 0, 0.021) 40px 40px,
+	    rgba(0, 0, 0, 0.02) 41px 41px,
+	    rgba(0, 0, 0, 0.019) 42px 42px,
+	    rgba(0, 0, 0, 0.018) 43px 43px,
+	    rgba(0, 0, 0, 0.017) 44px 44px,
+	    rgba(0, 0, 0, 0.016) 45px 45px,
+	    rgba(0, 0, 0, 0.015) 46px 46px,
+	    rgba(0, 0, 0, 0.014) 47px 47px,
+	    rgba(0, 0, 0, 0.013) 48px 48px,
+	    rgba(0, 0, 0, 0.012) 49px 49px,
+	    rgba(0, 0, 0, 0.011) 50px 50px,
+	    rgba(0, 0, 0, 0.01) 51px 51px,
+	    rgba(0, 0, 0, 0.009) 52px 52px,
+	    rgba(0, 0, 0, 0.008) 53px 53px,
+	    rgba(0, 0, 0, 0.007) 54px 54px,
+	    rgba(0, 0, 0, 0.006) 55px 55px,
+	    rgba(0, 0, 0, 0.005) 56px 56px,
+	    rgba(0, 0, 0, 0.004) 57px 57px,
+	    rgba(0, 0, 0, 0.003) 58px 58px,
+	    rgba(0, 0, 0, 0.002) 59px 59px,
+	    rgba(0, 0, 0, 0.001) 60px 60px;
+}
+/*** СЕРЕДИНКА ***/
+.wrapper {
+	position: relative;
+	margin: 0 auto;
+	width: 1320px;
+	height: auto;
+}
+
+/*** ну купи, ну купи ***/
+.block1 {
+	position: relative;
+	top: 34px;
+	margin: 0 auto;
+	width: 1177px;
+	height: 405px;
+}
+.block1 .advPic {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 841px;
+	height: 405px;
+	float: left;
+	background: url('images/block1Adv.jpg') no-repeat 0 0;
+}
+.orderCalc {
+	position: relative;
+	top: 0;
+	left: 0;
+	display: block;
+	float: right;
+	width: 335px;
+	height: 405px;
+	background: url('images/header.png') repeat 0 0;
+}
+.orderCalcText {
+	position: relative;
+	left: 0;
+	top: 36px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	line-height: 24px;
+	font-weight: lighter;
+	font-size: 21px;
+	color: #fff;
+}
+.orderCalc .name {
+	position: relative;
+	top: 60px;
+	left: 26px;
+}
+.orderCalc .phoneNumberForm {
+	position: relative;
+	top: 80px;
+	left: 26px;
+}
+.orderCalc .submitBtn {
+	position: relative;
+	top: 124px;
+	left: 88px;
+}
+/*** общие декораторы ***/
+.decoratorTop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 49px;
+	height: 49px;
+	background: url('images/decorator.png') transparent no-repeat 0 0;
+}
+.decoratorBottom {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 49px;
+	height: 49px;
+	background: url('images/decorator.png') transparent no-repeat 0 0;
+    -ms-transform: scaleX(-1) scaleY(-1); /* IE 9 */
+    -webkit-transform: scaleX(-1) scaleY(-1); /* Chrome, Safari, Opera */
+    transform: scaleX(-1) scaleY(-1);
+}
+
+/*** НАША ПРОДУКЦИЯ - БЛОК 2 ***/
+.block2 {
+	position: relative;
+	top: 84px;
+	margin: 0 auto;
+	width: 1320px;
+	height: 910px;
+	background: url('images/block2Bg.png') 0 0 repeat;
+	color: #fff;
+}
+.blockTitle {
+	position: relative;
+	top: 25px;
+	left: 72px;
+	width: 1177px;
+}
+.horizLine {
+	display: inline-block;
+	margin-bottom: 5px;
+	width: 100%;
+	height: 25px;
+	text-align: center;
+	background: url('images/block2hr.png') center center transparent repeat-x;
+	
+    zoom: 1;
+    *display: inline;
+}
+.blockTitleText {
+	padding: 0 10px;
+	width: auto;
+	font-size: 21px;
+	color: #fff;
+}
+.block2 .blockTitleText,
+.block5 .blockTitleText  {
+	background: url('images/block2Bg.png') 0 0 repeat;
+}
+.block2production {
+	position: relative;
+	top: 79px;
+	margin: 0 auto;
+	width: 100%;
+	height: 775px;
+	text-align: center;
+}
+.product {
+	display: inline-block;
+	margin: 10px;
+	vertical-align: top;
+	width: 284px;
+	height: 365px;	
+	
+    zoom: 1;
+    *display: inline;
+}
+.productName {
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 4px;
+	padding: 2px 8px;
+	width: auto;
+	height: 30px;
+	line-height: 32px;
+	text-align: center;
+	font-weight: lighter;
+	font-size: 20px;
+	background-color: #414042;	
+	
+    zoom: 1;
+    *display: inline;
+}
+.productPic {
+	position: relative;
+	top: 0;
+	width: 233px;
+	height: 233px;
+	border-radius: 118px;
+	border: 4px solid #ff8164;
+}
+.productSize {
+	line-height: 26px;
+	font-size: 17px;
+	font-weight: lighter;
+}
+.productPrice {
+	line-height: 26px;
+	font-size: 20px;
+}
+
+/*** позвоним - БЛОК 3, 5***/ 
+.block3, .block3_1 {
+	position: relative;
+	top: 91px;
+	width: 1320px;
+	height: 233px;
+	background: url('images/header.png') repeat 0 0;
+}
+.block3_1 { top: 86px; }
+.block3 .name,
+.block3 .phoneNumberForm,
+.block3 .submitBtn,
+.block3_1 .name,
+.block3_1 .phoneNumberForm,
+.block3_1 .submitBtn {
+	position: absolute;
+	top: 115px;
+	left: 180px;
+}
+.block3 .phoneNumberForm,
+.block3_1 .phoneNumberForm {
+	left: 526px;
+}
+.block3 .submitBtn,
+.block3_1 .submitBtn {
+	left: 878px;
+}
+
+/*** почему выбирают нас? - БЛОК 4 ***/
+
+.block4 {
+	display: block;
+	position: relative;
+	top: 98px;
+	margin-bottom: 18px;
+	width: 1320px;
+	height: 882px;
+	background-color: #efeee4;
+}
+.block4 .horizLine {
+	background: url('images/block4hr.png') center center transparent repeat-x;
+}
+.block4 .blockTitleText {
+	color: #464646;
+	background-color: #efeee4;
+}
+.productDecription, .stepDecription {
+	margin-top: 10px;
+	font-size: 17px;
+	font-weight: lighter;
+	color: #464646;
+}
+
+/*** процедура заказа - БЛОК 5***/
+
+.block5 {
+	position: relative;
+	top: 93px;
+	margin: 0 auto;
+	width: 1320px;
+	height: 910px;
+	background: url('images/block2Bg.png') 0 0 repeat;
+	color: #fff;
+}
+.block5way {
+	position: relative;
+	margin: 77px auto;
+	width: 1028px;
+	height: 586px;
+	text-align: center;
+}
+.step {
+	display: inline-block;
+	margin: 60px 7px;
+	width: 230px;
+	height: 230px;	
+	
+    zoom: 1;
+    *display: inline;
+}
+.arrow {
+	position: relative;
+	top: 113px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 4px;
+	width: 94px;
+	height: 35px;
+	background: url('images/steps/arrow.png') transparent no-repeat 0 0;	
+	
+    zoom: 1;
+    *display: inline;
+}
+.stepInfo {
+	width: 100%;
+	height: 100%;
+}
+.stepPic {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 15px;	
+	
+    zoom: 1;
+    *display: inline;
+}
+.stepDecription { 
+	color: #fff;
+}
+.step4 .stepPic { top: -15px; }
+
+/** FOOTER **/
+ .footer {
+	display: block;
+	top: 99px;
+	height: 275px;
+ }
+ .footer .footerText {
+	position: relative;
+	top: 25px;
+	font-size: 30px;
+	font-weight: lighter;
+	text-align: center;
+	color: #fff;
+ }
+.footer .cellphone {
+	display: inline;
+	float: none;
+	top: 0;
+}
+.text2 {
+	display: block;
+	font-size: 20px;
+}
+.inputs {
+	width: 1320px;
+	margin: 0 auto;
+}
+.footer .name,
+.footer .phoneNumberForm,
+.footer .submitBtn  {
+	position: relative;
+	float: left;
+	top: 70px;
+	left: 158px;
+}
+.footer .phoneNumberForm {
+	left: 234px;
+}
+.footer .submitBtn {
+	left: 305px;
+	top: 68px;
+}
